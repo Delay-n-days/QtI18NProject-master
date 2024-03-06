@@ -1,0 +1,46 @@
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+
+MainWindow::MainWindow(QWidget* parent)
+    : QMainWindow(parent)
+    , ui(new Ui::MainWindow)
+{
+    ui->setupUi(this);
+    connect(ui->comboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(changeLanguage(int)));
+}
+
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
+
+void MainWindow::changeLanguage(int index)
+{
+    qDebug() << "1 ";
+    bool loaded = false;
+    qDebug() << index;
+    switch (index) {
+    case 0:  // 中文
+    {
+
+        qDebug() << "English";
+        loaded = translator.load(":zh.qm");
+
+        qDebug() << "Translation file loaded:" << loaded;
+        break;
+    }
+    case 1:  // English
+    translator.load(":en.qm");
+    break;
+    default:
+    break;
+    }
+    qApp->installTranslator(&translator);
+    ui->retranslateUi(this); // 刷新UI
+    QFontMetrics metrics(ui->label->font());
+    int width = metrics.horizontalAdvance(ui->label->text());  // 计算文本的宽度
+    ui->label->setMinimumWidth(width);  // 设置控件的最小宽度
+    qDebug() <<"label setMinimumWidth" << width;
+
+
+}
