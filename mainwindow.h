@@ -15,6 +15,7 @@ class MainWindow : public QMainWindow
 
 public:
 QPushButton* p1 ;
+QPushButton* p2 ;
     MainWindow(QWidget* parent = nullptr);
     ~MainWindow();
 

@@ -8,8 +8,11 @@ MainWindow::MainWindow(QWidget* parent)
     ui->setupUi(this);
     connect(ui->comboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(changeLanguage(int)));\
 
-   p1 = new QPushButton("huhuhu",this);
+   p1 = new QPushButton(tr("huhuhu"),this);
     p1->move(130,30);
+
+    p2 = new QPushButton(tr("hujintao"),this);
+     p2->move(130,70);
 }
 
 MainWindow::~MainWindow()
@@ -37,9 +40,11 @@ void MainWindow::changeLanguage(int index)
     case 1:  // English
     translator.load(":en.qm");
     break;
+
     case 2:  // English
     translator.load(":jp.qm");
     break;
+
     default:
     break;
     }
@@ -52,5 +57,7 @@ void MainWindow::changeLanguage(int index)
     qDebug() <<"label setMinimumWidth" << width;
     QString a = "huhuhu";
     p1->setText(tr(a.toUtf8().data()));
+    QString b = "hujintao";
+    p2->setText(tr(b.toUtf8().data()));
 
 }

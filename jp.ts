@@ -2,10 +2,22 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="ja_JP">
 <context>
-
+    <name>MainWindow</name>
+    
+    <message>
+        <source>hujintao</source>
+        <translation type="unfinished">hujintao_jp</translation>
+    </message>
+    
     <message>
         <source>huhuhu</source>
-        <translation type="unfinished">テキストラベル2</translation>
+        <translation type="unfinished">huhuhu_jp</translation>
     </message>
+    
+    <message>
+        <source>jp</source>
+        <translation type="unfinished">riben</translation>
+    </message>
+    
 </context>
 </TS>
