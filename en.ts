@@ -35,7 +35,7 @@
     </message>
     <message>
         <source>huhuhu</source>
-        <translation type="obsolete">huhuhu</translation>
+        <translation type="unfinished">huhuhu</translation>
     </message>
 </context>
 </TS>

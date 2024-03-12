@@ -37,6 +37,9 @@ void MainWindow::changeLanguage(int index)
     case 1:  // English
     translator.load(":en.qm");
     break;
+    case 2:  // English
+    translator.load(":jp.qm");
+    break;
     default:
     break;
     }
