@@ -19,5 +19,25 @@
         <translation type="unfinished">jp</translation>
     </message>
     
+    <message>
+        <source>zh</source>
+        <translation type="unfinished">zh</translation>
+    </message>
+    
+    <message>
+        <source>en</source>
+        <translation type="unfinished">en</translation>
+    </message>
+    
+    <message>
+        <source>Button</source>
+        <translation type="unfinished">Button</translation>
+    </message>
+    
+    <message>
+        <source>TextLabel</source>
+        <translation type="unfinished">TextLabel</translation>
+    </message>
+    
 </context>
 </TS>

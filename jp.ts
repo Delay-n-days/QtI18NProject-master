@@ -19,5 +19,25 @@
         <translation type="unfinished">riben</translation>
     </message>
     
+    <message>
+        <source>zh</source>
+        <translation type="unfinished">zhongwen</translation>
+    </message>
+    
+    <message>
+        <source>en</source>
+        <translation type="unfinished">yingwen</translation>
+    </message>
+    
+    <message>
+        <source>Button</source>
+        <translation type="unfinished">anjian</translation>
+    </message>
+    
+    <message>
+        <source>TextLabel</source>
+        <translation type="unfinished">wenbenbiaoqian</translation>
+    </message>
+    
 </context>
 </TS>

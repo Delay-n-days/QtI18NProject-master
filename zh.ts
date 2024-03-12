@@ -19,5 +19,25 @@
         <translation type="unfinished">日本</translation>
     </message>
     
+    <message>
+        <source>zh</source>
+        <translation type="unfinished">中文</translation>
+    </message>
+    
+    <message>
+        <source>en</source>
+        <translation type="unfinished">英文</translation>
+    </message>
+    
+    <message>
+        <source>Button</source>
+        <translation type="unfinished">按键</translation>
+    </message>
+    
+    <message>
+        <source>TextLabel</source>
+        <translation type="unfinished">文本标签</translation>
+    </message>
+    
 </context>
 </TS>
