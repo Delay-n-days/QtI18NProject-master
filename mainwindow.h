@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QTranslator>
+#include <QPushButton>
 #include <QDebug>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -13,6 +14,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+QPushButton* p1 ;
     MainWindow(QWidget* parent = nullptr);
     ~MainWindow();
 

@@ -14,24 +14,28 @@
         <translation type="unfinished">按钮</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="40"/>
+        <location filename="mainwindow.ui" line="46"/>
         <source>TextLabel</source>
         <translation type="unfinished">文本标签</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="54"/>
+        <location filename="mainwindow.ui" line="60"/>
         <source>zh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="59"/>
+        <location filename="mainwindow.ui" line="65"/>
         <source>en</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="64"/>
+        <location filename="mainwindow.ui" line="70"/>
         <source>jp</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>huhuhu</source>
+        <translation type="obsolete">呼呼呼</translation>
     </message>
 </context>
 </TS>

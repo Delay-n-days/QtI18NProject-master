@@ -6,7 +6,10 @@ MainWindow::MainWindow(QWidget* parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    connect(ui->comboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(changeLanguage(int)));
+    connect(ui->comboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(changeLanguage(int)));\
+
+   p1 = new QPushButton("huhuhu",this);
+    p1->move(130,30);
 }
 
 MainWindow::~MainWindow()
@@ -16,6 +19,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::changeLanguage(int index)
 {
+
+
     qDebug() << "1 ";
     bool loaded = false;
     qDebug() << index;
@@ -37,10 +42,12 @@ void MainWindow::changeLanguage(int index)
     }
     qApp->installTranslator(&translator);
     ui->retranslateUi(this); // 刷新UI
+
     QFontMetrics metrics(ui->label->font());
     int width = metrics.horizontalAdvance(ui->label->text());  // 计算文本的宽度
     ui->label->setMinimumWidth(width);  // 设置控件的最小宽度
     qDebug() <<"label setMinimumWidth" << width;
-
+    QString a = "huhuhu";
+    p1->setText(tr(a.toUtf8().data()));
 
 }
